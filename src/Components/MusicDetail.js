@@ -5,7 +5,7 @@ const MusicDetail = (props) => {
   return (
     <div>
     <h2>{props.selectedTrack.name}</h2>
-
+    </div>
   )
 }
 

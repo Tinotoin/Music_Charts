@@ -1,8 +1,8 @@
 import React from 'react';
 
 const MusicSelector = (props) => {
-  const options = props.track.map(tracks => {
-    return <option value={tracks.selectedTrack} key={tracks.selectedTrack}>
+  const options = props.tracks.map(selectedTrack => {
+    return <option value={selectedTrack.selectedTrack} key={selectedTrack.selectedTrack}>
     {selectedTrack.title}
     </option>
   })
