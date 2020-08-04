@@ -11,7 +11,12 @@ function handleChange(event){
   props.onTrackSelected(event.target.value)
 }
 
-
+return (
+  <select id="track-selector" defaultValue="default" onChange={handleChange}>
+  <option disabled value="default">Choose your track...</option>
+  {options}
+  </select>
+)
 
 }
 
