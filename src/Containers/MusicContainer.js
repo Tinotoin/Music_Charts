@@ -1,6 +1,6 @@
 import React from 'react';
-import MusicSelector from '../components/MusicSelector';
-import MusicDetail from '../components/MusicDetail';
+import MusicSelector from '../Components/MusicSelector';
+import MusicDetail from '../Components/MusicDetail';
 
 
 class MusicContainer extends React.Component {
@@ -18,7 +18,7 @@ componentDidMount(){
 
   fetch(url)
   .then(res => res.json())
-  .then(trackList => this.setState({tracks: tracks})) // confused what 'tracks' should be here - keeps returning as undefined
+  .then(tracks => this.setState({tracks: tracks})) // confused what 'tracks' should be here - keeps returning as undefined
   .catch(err => console.error);
 
 }
